@@ -1,35 +1,4 @@
-/*var nombre = prompt('Ingresa tu nombre')
-var edad = prompt('Ingresa tu edad')
-var gusto1 = prompt('Ingresa tu pasatiempo favorito')
-var gusto2 = prompt('Ingresa tu otro pasatiempo favorito')
-
-console.log(`Mi nombre es: ${nombre} tengo la edad de ${edad} me gusta ${gusto1} y tambien ${gusto2}`);
-
-var numero1 = Number (prompt('Ingresa el primer dato'))
-var numero2 = Number (prompt('Ingresa el segundo dato'))
-var numero3 = Number (prompt('Ingresa el tercer dato'))
-
-console.log(numero1+numero2+numero3);  
-
-let teorico = true;
-let practico = true;
-let vista = true;
-
-if (teorico === true && practico === true && vista === true){
-    alert ('felicidades tienes tu licencia de conducir')
-}
-else if(practico===false){
-    alert ('fallaste el examen practico, repitelo')
-}
-else if(vista===false){
-    alert ('consideramos no dar la licencia por temas de vista')
-}
-else if(teorico===false){
-    alert ('fallaste el examen teorico, ponte a repasar')
-}
-else{
-    alert('contacta al administrador')
-}*/
+//ACTIVIDAD CLASE 2 
 
 //App para validar entrada al parque tematico
 
@@ -46,17 +15,6 @@ let altura = Number(prompt('Ingresa tu altura en cm'))
 let pago = prompt('hiciste el pago de la entrada').toLocaleLowerCase()
 let pase = prompt('tienes un pase VIP').toLocaleLowerCase()
 let salud = prompt('Tienes alguna condicion medica? si - no').toLocaleLowerCase()
-
-//Altura y edad
-/*if (edad >= 12 && altura >= 140){
-    console.log('cumples la condicion')
-}
-if(pago === 'si' || pase === 'si'){
-    console.log('Puedes ingresar')
-}
-else{
-    console.log('debes pagar o adquirir el pase')
-}*/
 
 if (edad >= 12 && altura >= 140){
     if(edad < 16){
@@ -88,4 +46,6 @@ if (edad >= 12 && altura >= 140){
 }else{
     console.log('no cumples cpn los requisitos para entrar')
 }
+
+//ACTIVIDAD CLASE 3
 
