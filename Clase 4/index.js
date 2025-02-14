@@ -104,4 +104,27 @@ function calcularPromedio(estudiante){
     return suma/estudiante.notas.length
 }
 
-console.log(calcularPromedio(estudiante));
+//console.log(calcularPromedio(estudiante));
+
+// Crear una funcion que reciba un array de objetos con estudiantes que retorne un nuevo array con los nombres y los promedios
+
+const estudiantes =[
+    {nombre: 'Isai', notas:[80,90,70]},
+    {nombre: 'Luis', notas:[100,50,90]},
+    {nombre: 'Johan', notas:[60,90,80]}
+]
+
+function generarReporte(estudiantes){
+    let reporte = [];
+    for(let i=0; i<estudiantes.length; i++){
+        let suma = 0;
+        for(let j=0; j<estudiantes[i].notas.length; j++){
+            suma +=estudiantes[i].notas[j]
+        }
+        let promedio = suma/estudiantes[i].notas.length
+        reporte.push({nombre: estudiantes[i].nombre, promedio: promedio})
+    }
+    return reporte;
+}
+
+console.log(generarReporte(estudiantes));
