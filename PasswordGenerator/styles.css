@@ -9,10 +9,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #111116;
+    background-color: #f4f4f4;
 }
 .container {
-    background: #24232A;
+    background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -35,9 +35,32 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
+button {
+    padding: 10px;
+    margin: 20px 0px 0px 0px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
 .options {
     display: flex;
     flex-direction: column;
     text-align: left;
     margin-bottom: 10px;
+}
+.strength-meter {
+    height: 10px;
+    width: 100%;
+    background: #ddd;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+}
+#strength-bar {
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
 }
