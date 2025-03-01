@@ -1,3 +1,7 @@
+document.getElementById("length").addEventListener("input", function() {
+    document.getElementById("lengthValue").textContent = this.value;
+});
+
 document.getElementById("generate").addEventListener("click", function() {
     const length = document.getElementById("length").value;
     const includeUppercase = document.getElementById("uppercase").checked;
